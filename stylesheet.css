@@ -1,0 +1,45 @@
+body {
+	font-family: 'Changa', sans-serif;
+	background-color: #A4A4A4;
+}
+
+h1 {
+	padding-top: 10px;
+	font-size: 36px;
+	color: white;
+}
+
+h4 {
+	font-size: 24px;
+	color: white;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+}
+
+div {
+	margin: auto;
+	width: 50%;
+	/*border: solid red 1px;*/
+}
+
+button {
+	font-family: 'Changa', sans-serif;
+	padding-top: 10px;
+	padding-left: 40px;
+	padding-right:40px;
+	padding-bottom: 10px;
+	font-size: 24px;
+}
+
+.left {
+	width: 50%;
+	text-align: left;
+	float: left;
+}
+.right {
+	float: right;
+	width: 49%;
+}
