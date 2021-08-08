@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dice game</title>
+	<meta charset="utf-8">
+	<link href="stylesheet.css" rel="stylesheet">
+</head>
+<body>
+	<div>
+		<h1>Atk Dice VS Def Dice</h1>
+		<p>This is my very first test using Js to make an interactive html. If you click the button it´ll roll an atk dice and a def dice, then it´ll quit an hp amount based on the diffrence between atk and def. If Hp gets to 0 the character dies.</p>
+		<h4>Let the dice roll!</h4>
+		<button onclick="roll()"><h3>ROLL</h3></button>
+	</div>
+	<div>
+		<div class="left">
+			<h4>HP: <h4 id="hpSpot"></h4></h4>
+			<h4>Status: <h4 id="statusSpot"></h4></h4>
+		</div>
+		<div class="right">
+			<h4 id="atkSpot">ATK: </h4>
+			<h4 id="defSpot">DEF: </h4>
+			<h4 id="damageSpot"></h4>
+		</div>
+	</div>
+	<script>
+		function roll() {
+			console.log("Atk dice Vs Def dice");
+				let _hp =  10;
+				console.log("HP: " + _hp);
+				document.getElementById('hpSpot').innerHTML = _hp;
+//dices
+//ATK
+let atk = Math.floor(Math.random() * (10 - 0));
+console.log("resultado del atk: " + atk);
+document.getElementById('atkSpot').innerHTML = "Atk: " + atk;
+
+//DEF
+let def = Math.floor(Math.random() * (10 - 0));
+console.log("resultado de la def: " + def);
+document.getElementById('defSpot').innerHTML = "Def: " +def;
+
+
+//results
+if (atk > def ) {
+    console.log("hit");
+    let damage = atk - def;
+    console.log( "Damage: " + damage );
+    document.getElementById('damageSpot').innerHTML = "Damage: " + damage;
+    _hp = _hp - damage
+    document.getElementById('hpSpot').innerHTML = _hp;
+    console.log(_hp);
+    document.getElementById('statusSpot').innerHTML = "está vivo";
+}
+else  {
+    console.log("atk failed");
+    document.getElementById('damageSpot').innerHTML = "atk failed";
+}
+let lifeStatus = _hp > 0 ? "HP: " + _hp : document.getElementById('statusSpot').innerHTML = "is dead";
+console.log(lifeStatus);
+}
+
+
+	</script>
+
+</body>
+</html>
