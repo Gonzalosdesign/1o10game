@@ -1,39 +1,67 @@
 body {
-	font-family: 'Changa', sans-serif;
-	background-color: #A4A4A4;
+	font-family: 'Tourney', cursive;
+	background-color: #0D0D0D;
 }
 
 h1 {
-	padding-top: 10px;
+	margin: 10%;
+	padding: 10%;
 	font-size: 36px;
-	color: white;
+	color: #3BBF8F;
+	background-color: #022619;
+	box-shadow: -10px 10px; 
 }
 
 h4 {
 	font-size: 24px;
-	color: white;
+	color: #3BBF8F;
+	margin: 10%;
 }
 
 p {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: bold;
+	color: white;
+	font-size: 14px;
+	margin: 10%;
 }
 
 div {
 	margin: auto;
-	width: 50%;
 	/*border: solid red 1px;*/
 }
 
-button {
-	font-family: 'Changa', sans-serif;
-	padding-top: 10px;
-	padding-left: 40px;
-	padding-right:40px;
-	padding-bottom: 10px;
-	font-size: 24px;
+.botonera {
+	margin: 10%;
 }
 
+.btn-primary {
+	background-color: #022619;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: bold;
+}
+
+.btn-primary:hover {
+	background-color: #3BBF8F;
+	color: #022619;
+	box-shadow: -10px 10px;
+}
+
+.status {
+	margin-top: 40px;
+	background-color: #022619;
+	box-shadow: -10px 10px;
+	margin: 10%;
+}
+
+.dice {
+	margin-top: 40px;
+	background-color: #022619;
+	box-shadow: -10px 10px;
+	margin: 10%;
+}
+
+/*
 .left {
 	width: 50%;
 	text-align: left;
@@ -43,3 +71,4 @@ button {
 	float: right;
 	width: 49%;
 }
+*/
